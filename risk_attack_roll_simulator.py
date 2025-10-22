@@ -1,12 +1,12 @@
 import random
 import argparse
-...
+"""
 This program is a multi-attack simulator for the game of risk.
 It simply asks for the number of attackers, the number of defenders, and a stop number which 
 represents the number of attackers, that should the attacking number be reduced to or below,
 the program will stop as a safety measure. This program speeds up the process for long engagements
 by conducting any series of attacking rolls in rapid succession, thus saving considerable time.
-...
+"""
 
 # Set up argument parser
 parser = argparse.ArgumentParser(description="Risk battle simulation")
@@ -53,3 +53,4 @@ def attack(attackers, defenders, stop):
   print(f"Attacker: {attackers} remaining; Defender: {defenders} remaining")
 
 attack(attackers, defenders, stop)
+
